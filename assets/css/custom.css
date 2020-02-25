@@ -92,3 +92,8 @@ html,body {
 .lh-25 {
     line-height: 25px !important;
 }
+
+.row {
+    width: 100% !important;
+    margin: 0 !important;
+}
