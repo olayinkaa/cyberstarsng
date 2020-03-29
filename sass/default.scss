@@ -1,3 +1,28 @@
+@import 'variable';
+
+.navbar-brand
+{
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 28px;
+}
+
+.navbar-nav .nav-link
+{
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color:lighten($blue,20%) !important;
+}
+
+.navbar-nav .nav-item
+{
+    margin:6px 20px;
+}
+
+
+
+
 .px-5x2 {
     padding-left: 6rem !important;
     padding-right: 6rem !important;
@@ -96,4 +121,32 @@ html,body {
 .row {
     width: 100% !important;
     margin: 0 !important;
+}
+
+// --------------------signup
+.signup{
+
+    .card{
+
+        background-color:lighten($gray,40%);
+
+        label{
+
+            // color:darken($black,80%);
+            color:black;
+        }
+    }
+}
+
+.signin
+{
+    
+
+    @extend .signup;
+
+    .card{
+
+        margin-top:150px;
+        
+    }
 }
